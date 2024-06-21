@@ -14,9 +14,15 @@ public class RockGenerator : MonoBehaviour
     {
         GenerateRocks();
     }
+    public void changeNumRocks(int n)
+    {
+        numberOfRocks = n;
+        PlayerPrefs.SetInt("numberOfRocks", numberOfRocks);
+    }
 
     void GenerateRocks()
     {
+        numberOfRocks = PlayerPrefs.GetInt("numberOfRocks");
         List<Vector2> rockPositions = new List<Vector2>();
 
         for (int i = 0; i < numberOfRocks; i++)
