@@ -36,7 +36,9 @@ public class SkinManager : MonoBehaviour
 
     public void PlayGame()
     {
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/selectedskin.prefab");
+        //PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/selectedskin.prefab");
+        PlayerPrefs.SetInt("skinIndex", selectedSkin);
+        SceneManager.LoadScene("mars scene - Copy");
         
     }
 
