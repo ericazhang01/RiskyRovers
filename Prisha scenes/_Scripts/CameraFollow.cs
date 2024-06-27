@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
+         target = GameObject.FindWithTag("Player").GetComponent<Transform>();
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
