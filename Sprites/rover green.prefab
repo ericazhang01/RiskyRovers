@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4845223347526079888}
   - component: {fileID: 4238573481155495025}
   - component: {fileID: -6476045849190397973}
+  - component: {fileID: -8769886781063266360}
   m_Layer: 0
   m_Name: rover green
   m_TagString: Player
@@ -280,3 +281,30 @@ PolygonCollider2D:
       - {x: 0.19999999, y: 0.45}
       - {x: 0.11, y: 0.44}
   m_UseDelaunayMesh: 0
+--- !u!50 &-8769886781063266360
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684689192842308940}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
