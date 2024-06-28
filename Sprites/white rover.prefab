@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6529100747607474550}
   - component: {fileID: 63437070930654279}
   - component: {fileID: -2762520371528166257}
+  - component: {fileID: -741418345608910454}
   m_Layer: 0
   m_Name: white rover
   m_TagString: Player
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7258257734058676198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: becbba7ef34249946bce04b0ca353b69, type: 3}
+  m_Script: {fileID: 11500000, guid: a6891bba2fa851a4183df79167cbbaf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
@@ -308,3 +309,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-741418345608910454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258257734058676198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1386d6f41fc7546876f14e04bcdbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  healthBarSlider: {fileID: 0}
