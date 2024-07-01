@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6812437698721511239}
   - component: {fileID: 2068356850604170738}
   - component: {fileID: -8025877653203659088}
-  - component: {fileID: 8860978019469090677}
   - component: {fileID: 8954653878023383191}
   - component: {fileID: 6487258646897032590}
+  - component: {fileID: 1247502372159603173}
   m_Layer: 0
   m_Name: rover (1)
   m_TagString: Player
@@ -115,19 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8860978019469090677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6768883717576342921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6891bba2fa851a4183df79167cbbaf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
 --- !u!60 &8954653878023383191
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -323,3 +310,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   healthBarSlider: {fileID: 0}
+--- !u!114 &1247502372159603173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6768883717576342921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c30ae9980d9df4c852eeefeef37e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5

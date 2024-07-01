@@ -9,6 +9,12 @@ public class CharacterSelection : MonoBehaviour
     public GameObject[] characters;
     public int selectedCharacter = 0;
 
+    void Start() {
+        for (int i = 1; i < characters.Length; i++) {
+                characters[i].SetActive(false);
+        }
+    }
+
     public void NextCharacter()
     {
         characters[selectedCharacter].SetActive(false);
