@@ -5,7 +5,7 @@ using UnityEngine;
 public class RockHelp : MonoBehaviour
 {
     private GameManager gameManager;
-    
+    private bool stop = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,11 @@ public class RockHelp : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        if (stop) {
+            return;
+        }
         gameManager.UpdateScore(1);
+        stop = true;
 
     } 
 }
