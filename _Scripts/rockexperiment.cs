@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class rockexperiment : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D x) {
-        Debug.Log("YAYYY");
-    }
+    public int rockNum;
+    private ExperimentImage experimentButton;
+
 
     void Start() {
-        Debug.Log("what");
+        experimentButton = GameObject.Find("ExperimentImage").GetComponent<ExperimentImage>();
     }
+    private void OnTriggerEnter2D(Collider2D x) {
+
+        
+        experimentButton.ChangeImage(rockNum);
+    }
+
+    
 }
