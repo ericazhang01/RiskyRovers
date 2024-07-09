@@ -2284,6 +2284,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564398512}
   m_CullTransparentMesh: 1
+--- !u!1 &572537055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572537056}
+  - component: {fileID: 572537057}
+  m_Layer: 0
+  m_Name: Rover Sprite Changer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572537056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572537055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.951745, y: 2.7978895, z: 0.10281866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &572537057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572537055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053893556e9740f4495f5ea85bc1019e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roverSprites:
+  - {fileID: 21300000, guid: 7eab112d084553348b95795ace38c606, type: 3}
+  - {fileID: 21300000, guid: 89017648a23e6c24cbf3c7ff5aa7fce1, type: 3}
+  - {fileID: 21300000, guid: 7eed62468761046be927967addbf6892, type: 3}
+  - {fileID: 21300000, guid: c0c458a238d754376b8b3e5384a2a257, type: 3}
+  rover1: {fileID: 2081609962}
 --- !u!1 &587067274
 GameObject:
   m_ObjectHideFlags: 0
@@ -8594,8 +8644,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081609962}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12141675, y: -0.13007933, z: -0.008430292}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.12141657, y: -0.13007927, z: -0.008430295}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9474,12 +9524,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 2081609967}
   - {fileID: 695151042}
   - {fileID: 1696934645}
   - {fileID: 821731892}
   - {fileID: 2098411911}
   - {fileID: 311623817}
-  - {fileID: 2081609967}
   - {fileID: 701548643}
   - {fileID: 982267985315237913}
   - {fileID: 59138608}
@@ -9502,3 +9552,4 @@ SceneRoots:
   - {fileID: 1733073869}
   - {fileID: 879013392}
   - {fileID: 1179443920}
+  - {fileID: 572537056}
