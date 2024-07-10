@@ -17,5 +17,9 @@ public class rockexperiment : MonoBehaviour
         experimentButton.ChangeImage(rockNum);
     }
 
+    private void OnTriggerExit2D(Collider2D y) {
+        experimentButton.ResetImage();
+    }
+
     
 }
