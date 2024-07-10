@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98474df7d5e2d5049a70d3d62725d2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockNum: 4
+  rockNum: 0
 --- !u!1 &4125394401381929657
 GameObject:
   m_ObjectHideFlags: 0
