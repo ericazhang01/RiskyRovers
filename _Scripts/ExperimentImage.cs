@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class ExperimentImage : MonoBehaviour
 {
-    public Sprite[] rockList;
+    public GameObject[] rockList;
     //public Sprite rock5;
-    public Sprite defaultImage;
-    public Image dataImage;
-
+    public GameObject defaultImage;
+    //public Image dataImage;
+    public bool activeS;
 
     void Start() {
         ResetImage();
@@ -18,14 +18,25 @@ public class ExperimentImage : MonoBehaviour
 
     public void ChangeImage(int num) {
 
+        defaultImage.SetActive(false);
         for(int i = 0; i < rockList.Length; i++) {
+            if (i == num) {
+                rockList[i].SetActive(true);
+                
+            }
+        }
+
+
+
+
+       /* for(int i = 0; i < rockList.Length; i++) {
             if(i == num) {
                 dataImage.GetComponent<Image>().sprite = rockList[i];
             }
         }
 
 
-        /*switch(num) {
+        switch(num) {
             case 4:
                 
                 dataImage.GetComponent<Image>().sprite = rockList[0];
@@ -44,6 +55,10 @@ public class ExperimentImage : MonoBehaviour
     }
 
     public void ResetImage() {
-        dataImage.GetComponent<Image>().sprite = defaultImage;
+       // dataImage.GetComponent<Image>().sprite = defaultImage;
+        for(int i = 0; i < rockList.Length; i++) {
+            rockList[i].SetActive(false);
+        }
+        defaultImage.SetActive(true);
     }
 }
