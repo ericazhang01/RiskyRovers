@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 291897337}
-  - component: {fileID: 291897336}
+  - component: {fileID: 291897338}
   m_Layer: 0
   m_Name: changescene (2)
   m_TagString: Untagged
@@ -139,18 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &291897336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291897335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f8e91c5d3c8c6489cb8e9185228a54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &291897337
 Transform:
   m_ObjectHideFlags: 0
@@ -166,6 +154,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291897338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291897335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53622faec1b48634fadea8e00c797ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &314317967
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +309,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 332851954}
-  - component: {fileID: 332851953}
   m_Layer: 0
   m_Name: Rock changer
   m_TagString: Untagged
@@ -317,23 +316,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &332851953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332851952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8908731049ed3824f9333f0090db2bde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rockPrefabs: []
-  numberOfRocks: 20
-  areaWidth: 50
-  areaHeight: 50
-  minDistanceBetweenRocks: 2
 --- !u!4 &332851954
 Transform:
   m_ObjectHideFlags: 0
@@ -537,7 +519,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 332851953}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RockGenerator, Assembly-CSharp
         m_MethodName: changeNumRocks
         m_Mode: 3
@@ -670,7 +652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 332851953}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RockGenerator, Assembly-CSharp
         m_MethodName: changeNumRocks
         m_Mode: 3
@@ -871,7 +853,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291897336}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
         m_Mode: 3
@@ -1272,7 +1254,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 332851953}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RockGenerator, Assembly-CSharp
         m_MethodName: changeNumRocks
         m_Mode: 3
