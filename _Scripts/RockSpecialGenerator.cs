@@ -2,21 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockGenerator : MonoBehaviour
+public class RockSpecialGenerator : MonoBehaviour
 {
     public GameObject[] rockPrefabs; // Array to hold the different rock prefabs
-    public int numberOfRocks = 20; // Number of rocks to generate
-    public float areaWidth = 50f; // Width of the area where rocks can be placed
-    public float areaHeight = 50f; // Height of the area where rocks can be placed
+    public int numberOfRocks = 3; // Number of rocks to generate
+    public float areaWidth = 20f; // Width of the area where rocks can be placed
+    public float areaHeight = 20f; // Height of the area where rocks can be placed
     public float minDistanceBetweenRocks = 2f; // Minimum distance between rocks
 
     void Start()
     {
         GenerateRocks();
     }
+    public void changeNumRocks(int n)
+    {
+        numberOfRocks = n;
+        PlayerPrefs.SetInt("numberOfRocks", numberOfRocks);
+    }
 
     void GenerateRocks()
     {
+        //numberOfRocks = PlayerPrefs.GetInt("numberOfRocks");
         List<Vector2> rockPositions = new List<Vector2>();
 
         for (int i = 0; i < numberOfRocks; i++)
@@ -43,7 +49,8 @@ public class RockGenerator : MonoBehaviour
             } while (!validPosition);
 
             rockPositions.Add(newPosition);
-            Instantiate(rockPrefabs[Random.Range(0, rockPrefabs.Length)], newPosition, Quaternion.identity);
+            Instantiate(rockPrefabs[i], newPosition, Quaternion.identity);
         }
     }
 }
+

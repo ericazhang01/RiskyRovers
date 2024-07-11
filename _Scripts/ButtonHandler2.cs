@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonHandler1 : MonoBehaviour
+public class ButtonHandler2 : MonoBehaviour
 {
     public Button myButton; // Reference to the Button
-    public MenuManager1 menuManager1; // Reference to the MenuManager
+    public MenuManager3 menuManager3; // Reference to the MenuManager
 
     void Start()
     {
@@ -15,13 +15,13 @@ public class ButtonHandler1 : MonoBehaviour
     void ToggleMenu()
     {
         Debug.Log("Button Clicked!");
-        if (menuManager1.popUpMenu2.activeSelf)
+        if (menuManager3.objectivePopUp.activeSelf)
         {
-            menuManager1.HideMenu(); // Hide the menu if it's currently active
+            menuManager3.HideMenu(); // Hide the menu if it's currently active
         }
         else
         {
-            menuManager1.ShowMenu(); // Show the menu if it's currently hidden
+            menuManager3.ShowMenu(); // Show the menu if it's currently hidden
         }
     }
 }
