@@ -11,11 +11,11 @@ public class GameManagerScore : MonoBehaviour
    
 
     void Start() {
-        mainText.text = "Items Found: " + score + "/8";
+        mainText.text = "Rocks Found: " + score + "/6";
     }
     public void UpdateScore(int s) {
         score += s;
-        mainText.text = "Items Found: " + score + "/8";
+        mainText.text = "Rocks Found: " + score + "/6";
     }
 
 }
